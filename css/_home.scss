@@ -1,0 +1,94 @@
+
+@import 'breakpoints';
+.cover-image{
+    height:150px;
+    background-color: $main-color;
+    width: 100%;
+    cursor:pointer;
+    
+}
+
+.profile{
+    height:170px;
+    width: 100%;
+    box-sizing: content-box;
+    padding:5%;
+    display:flex;
+    flex-direction: column;
+    .profile-photo{
+        width: 95px;
+        height: 95px;
+        border-radius: 50%;
+        background-color: aquamarine;
+        margin-top:-75px;
+        z-index: 999;
+        cursor:pointer;
+    }
+
+    .profile-name{
+        font-size: 15px;
+        height:20%;
+        display:flex;
+        flex-direction: row;
+        font-weight: bold;
+        .verified{
+            height:30px;
+            margin-top:3px;
+        }
+        .follow{
+            width: 100px;
+            height:40px;
+            border-radius: 50px;
+            background-color: white;
+            padding:10px 10px;
+            text-align: center;
+            border: 1px solid rgba(101,119,134,0.3);
+            font-weight: bold;
+            margin-left: 90px;
+            margin-top:-35px;
+            font-size: 15px;
+            cursor:pointer;
+            &:hover{
+                transition: $hover-transition;
+                background-color: $quartenary-color;
+            }
+            @include small{
+                
+                transition: width 2s;
+                margin-left:40%;
+                margin-top: -35px;
+            }
+        }
+    }
+    .profile-nickname{
+        font-size: 16px;
+        padding:1%;
+        h4{
+            color:$terciary-color;
+            font-weight: 500;
+        }
+
+    }
+    .profile-info{
+        font-size: 16px;
+        color:$terciary-color;
+        margin-top: 2vh;
+            ul{
+            display:flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            color:$terciary-color;
+            
+            li{
+                padding: 10px 10px 0 0;
+                list-style: none;
+            }
+        }
+        
+        .material-symbols-outlined{
+            font-size:16px;
+            vertical-align: middle;
+            margin-right:5px;
+        }
+    }
+}
