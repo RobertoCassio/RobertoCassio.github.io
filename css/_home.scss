@@ -15,14 +15,29 @@
     padding:5%;
     display:flex;
     flex-direction: column;
+    @include extrasmall{
+        padding-left:10%;
+    }
+    
     .profile-photo{
-        width: 95px;
-        height: 95px;
+        width: 20%;
+        height: 20%;
         border-radius: 50%;
         background-color: aquamarine;
         margin-top:-75px;
         z-index: 999;
         cursor:pointer;
+        @include extrasmall{
+            padding-bottom: 75px;
+            padding-left: 75px;
+            margin-top:-55px;
+        }
+        @include small{
+            padding-bottom: 100px;
+            padding-left: 100px;
+            
+            margin-top:-80px;
+        }
     }
 
     .profile-name{
@@ -52,11 +67,18 @@
                 transition: $hover-transition;
                 background-color: $quartenary-color;
             }
+            @include extrasmall{
+                margin-left:10%;
+                margin-top: -5px;
+            }
             @include small{
                 
                 transition: width 2s;
                 margin-left:40%;
                 margin-top: -35px;
+            }
+            @include extralarge{
+                margin-top:-20px;
             }
         }
     }

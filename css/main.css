@@ -13,14 +13,33 @@
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 0) {
+  .profile {
+    padding-left: 10%;
+  }
+}
 .profile .profile-photo {
-  width: 95px;
-  height: 95px;
+  width: 20%;
+  height: 20%;
   border-radius: 50%;
   background-color: aquamarine;
   margin-top: -75px;
   z-index: 999;
   cursor: pointer;
+}
+@media (min-width: 0) {
+  .profile .profile-photo {
+    padding-bottom: 75px;
+    padding-left: 75px;
+    margin-top: -55px;
+  }
+}
+@media (min-width: 480px) {
+  .profile .profile-photo {
+    padding-bottom: 100px;
+    padding-left: 100px;
+    margin-top: -80px;
+  }
 }
 .profile .profile-name {
   font-size: 15px;
@@ -51,11 +70,22 @@
   transition: ease-in-out 0.2s;
   background-color: #E1E8ED;
 }
+@media (min-width: 0) {
+  .profile .profile-name .follow {
+    margin-left: 10%;
+    margin-top: -5px;
+  }
+}
 @media (min-width: 480px) {
   .profile .profile-name .follow {
     transition: width 2s;
     margin-left: 40%;
     margin-top: -35px;
+  }
+}
+@media (min-width: 1200px) {
+  .profile .profile-name .follow {
+    margin-top: -20px;
   }
 }
 .profile .profile-nickname {
@@ -122,7 +152,7 @@
 
 .feed-content {
   padding: 10px 10px 0 10px;
-  width: 100vh;
+  width: 100%;
   display: grid;
   grid-template-rows: 35px;
   grid-template-columns: 35px auto auto;
@@ -180,7 +210,12 @@
 .feed-content .content-main .text {
   width: 90%;
   justify-content: center;
+  align-items: center;
   font-size: 13px;
+}
+.feed-content .content-main .text .contacts-img img {
+  width: 30px;
+  margin-bottom: -10px;
 }
 .feed-content .content-main .content-img {
   aspect-ratio: 1/1;

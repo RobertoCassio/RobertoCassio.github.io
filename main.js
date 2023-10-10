@@ -35,6 +35,17 @@ $(document).ready(function(){
         inContact = false;
         updateUnderline();
     });
+
+    //To Contact
+    $("#contact").click(function(){
+        $("#mainbody").load("contact.html")
+        inContact = true;
+        inProjects = false;
+        inFeed = false;
+        inAbout = false;
+        updateUnderline();
+    })
+
   
 updateUnderline();
 
@@ -47,7 +58,7 @@ function updateUnderline(){
     }else if (inAbout === true){
         $('#aboutme').addClass("underline-item");
     }else if(inContact === true){
-        $('#contacts').addClass("underline-item");
+        $('#contact').addClass("underline-item");
     }
 }
 
