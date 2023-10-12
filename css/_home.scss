@@ -26,7 +26,10 @@
         background-color: aquamarine;
         margin-top:-75px;
         z-index: 999;
+        border:2px solid white;
+        overflow:hidden;
         cursor:pointer;
+        
         @include extrasmall{
             padding-bottom: 75px;
             padding-left: 75px;
@@ -37,6 +40,13 @@
             padding-left: 100px;
             
             margin-top:-80px;
+        }
+        img{
+            position:relative;
+            margin:0 auto;
+            height:120px;
+            width:120px;
+            transform: (translate(-85%, -3%));
         }
     }
 
