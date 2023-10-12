@@ -259,16 +259,23 @@
   align-items: center;
   font-size: 13px;
 }
+.feed-content .content-main .text li {
+  list-style-type: none;
+}
 .feed-content .content-main .text .contacts-img img {
   width: 30px;
   margin-bottom: -10px;
 }
 .feed-content .content-main .content-img {
-  aspect-ratio: 1/1;
   width: 90%;
+  height: auto;
   border-radius: 10px;
   margin: 3vh 0 0 0;
-  background-color: aqua;
+  overflow: hidden;
+  display: inline-block;
+}
+.feed-content .content-main .content-img img {
+  width: 100%;
 }
 
 * {
