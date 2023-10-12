@@ -47,6 +47,39 @@
 
 
     }
+    .icons{
+        width:90%;
+        ul{
+            display:flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            list-style-type: none;
+        }
+        li{
+            padding: 5px 5px 5px 5px;
+            margin-right:15px;
+            border:1px none red;
+            border-radius: 50%;
+            .material-symbols-outlined{
+                font-size:1.2rem;
+                vertical-align: middle;
+                font-weight: lighter;
+                text-align: center;
+                
+            }
+            &:nth-child(1):hover{
+                color:$main-color;
+                transition: $hover-transition;
+                background:rgb(29, 161, 242, 0.2);
+            }
+            &:nth-child(2):hover{
+                color:rgb(249, 24, 128);
+                background:rgb(249, 24, 128, 0.2);
+                transition: $hover-transition;
+            }
+        }
+    
+    }
     .content-photo{
 
         width: 45px;
