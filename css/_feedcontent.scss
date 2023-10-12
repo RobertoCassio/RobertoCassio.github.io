@@ -103,6 +103,18 @@
         padding:0 0 1% 10%;
         margin-top:10px;
         margin-bottom: 10px;
+        .tech-used{
+            img{  
+            border-radius: 10px;
+            width:15%;
+            @include extrasmall{
+                margin-left:10px;
+            }
+            @include small{
+                margin-left: 0;
+            }
+            }
+        }
         .text{
             width:90%;
             justify-content: center;

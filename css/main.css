@@ -253,6 +253,20 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.feed-content .content-main .tech-used img {
+  border-radius: 10px;
+  width: 15%;
+}
+@media (min-width: 0) {
+  .feed-content .content-main .tech-used img {
+    margin-left: 10px;
+  }
+}
+@media (min-width: 480px) {
+  .feed-content .content-main .tech-used img {
+    margin-left: 0;
+  }
+}
 .feed-content .content-main .text {
   width: 90%;
   justify-content: center;
