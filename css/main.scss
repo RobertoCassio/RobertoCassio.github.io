@@ -22,7 +22,9 @@ $shadow: 1px solid rgba(0, 0, 0, 0.1);
     box-sizing:border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+a:visited {
+    color: $secondary-color; /* You can set the same color as unvisited links */
+}
 body{
     margin:5% auto;
     display:flex;
