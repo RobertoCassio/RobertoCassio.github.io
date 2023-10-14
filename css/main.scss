@@ -4,9 +4,11 @@
     --terciary-color: #657786;
     --quartenary-color:#E1E8ED;
     --hover-color: #E1E8ED;
+
     --text-color: black;
     --text-color2: #657786;
     --background-color: white;
+    --border-color: rgba(0, 0, 0, 0.1);
 }
 
 $hover-transition:ease-in-out 0.2s;
@@ -69,8 +71,10 @@ body{
         --terciary-color: #22303c;
         --quartenary-color:#8899ac; 
         --background-color:#15202B;
+
         --hover-color: #192734;
         --text-color:white;
         --text-color2:#8899ac;
+        --border-color: rgba(136, 153, 172, 0.1);
     }
 }

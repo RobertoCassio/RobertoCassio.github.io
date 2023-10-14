@@ -7,7 +7,8 @@
     display:grid;
     grid-template-rows:35px;
     grid-template-columns: 35px auto auto;
-    border-bottom: $shadow;
+    border: 1px solid var(--border-color);
+    border-top:none;
     cursor:pointer;
     &:hover{
         background-color: var(--hover-color);

@@ -7,6 +7,7 @@
   --text-color: black;
   --text-color2: #657786;
   --background-color: white;
+  --border-color: rgba(0, 0, 0, 0.1);
 }
 
 .cover-image {
@@ -14,6 +15,8 @@
   background-color: var(--main-color);
   width: 100%;
   cursor: pointer;
+  border: 1px solid var(--border-color);
+  box-sizing: border-box;
 }
 
 .profile {
@@ -23,6 +26,9 @@
   padding: 5%;
   display: flex;
   flex-direction: column;
+  border: 1px solid var(--border-color);
+  border-bottom: none;
+  border-top: none;
 }
 @media (min-width: 0) {
   .profile {
@@ -147,7 +153,8 @@
   font-size: 15px;
   color: var(--text-color2);
   font-weight: bold;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+  border-top: none;
 }
 .menu ul li {
   width: 25%;
@@ -176,7 +183,8 @@
   display: grid;
   grid-template-rows: 35px;
   grid-template-columns: 35px auto auto;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+  border-top: none;
   cursor: pointer;
 }
 .feed-content:hover {
@@ -355,5 +363,6 @@ body {
     --hover-color: #192734;
     --text-color:white;
     --text-color2:#8899ac;
+    --border-color: rgba(136, 153, 172, 0.1);
   }
 }/*# sourceMappingURL=main.css.map */
