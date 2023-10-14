@@ -10,7 +10,7 @@
     border-bottom: $shadow;
     cursor:pointer;
     &:hover{
-        background-color: $quartenary-color;
+        background-color: var(--hover-color);
         transition: $hover-transition;
     }
 
@@ -19,7 +19,7 @@
             font-size:11px;
             grid-column:2;
             grid-row:1;
-            color:$terciary-color;
+            color:var(--text-color2);
             font-weight: bolder;
             .material-symbols-outlined{
                 font-size:15px;
@@ -42,13 +42,14 @@
             .date{
                 font-size: 13px;
                            margin-top: 20px;
-                color:$terciary-color;
+                color:var(--text-color2);
             }
 
 
     }
     .icons{
         width:90%;
+        color:var(--text-color2);
         ul{
             display:flex;
             flex-direction: row;
@@ -68,7 +69,7 @@
                 
             }
             &:nth-child(1):hover{
-                color:$main-color;
+                color:var(--main-color);
                 transition: $hover-transition;
                 background:rgb(29, 161, 242, 0.2);
             }
@@ -90,7 +91,7 @@
         grid-column: 1 / span 3;
         margin-top:20px;
         overflow: hidden;
-        border: 1px solid white;
+        border: 1px solid var(--background-color);
         img{
             width: 50px;
             height: 50px;
