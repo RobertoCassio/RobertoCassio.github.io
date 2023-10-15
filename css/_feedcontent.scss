@@ -10,6 +10,10 @@
     border: 1px solid var(--border-color);
     border-top:none;
     cursor:pointer;
+    @include small{
+        grid-template-rows:35px;
+        grid-template-columns: 35px auto auto;
+    }
     &:hover{
         background-color: var(--hover-color);
         transition: $hover-transition;

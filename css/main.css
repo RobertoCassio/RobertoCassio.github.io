@@ -35,7 +35,8 @@
     padding-left: 10%;
   }
 }
-.profile .profile-photo {
+
+.profile-photo {
   width: 20%;
   height: 20%;
   border-radius: 50%;
@@ -47,38 +48,46 @@
   cursor: pointer;
 }
 @media (min-width: 0) {
-  .profile .profile-photo {
+  .profile-photo {
     padding-bottom: 75px;
     padding-left: 75px;
     margin-top: -55px;
   }
 }
 @media (min-width: 480px) {
-  .profile .profile-photo {
+  .profile-photo {
     padding-bottom: 100px;
     padding-left: 100px;
     margin-top: -80px;
   }
 }
-.profile .profile-photo img {
+.profile-photo img {
   position: relative;
   margin: 0 auto;
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
   transform: translate(-85%, -3%);
 }
-.profile .profile-name {
-  font-size: 15px;
+@media (min-width: 480px) {
+  .profile-photo img {
+    width: 120px;
+    height: 120px;
+    transform: translate(-85%, -3%);
+  }
+}
+
+.profile-name {
+  font-size: 1rem;
   height: 20%;
   display: flex;
   flex-direction: row;
   font-weight: bold;
 }
-.profile .profile-name .verified {
+.profile-name .verified {
   height: 30px;
   margin-top: 3px;
 }
-.profile .profile-name .follow {
+.profile-name .follow {
   width: 100px;
   height: 40px;
   border-radius: 50px;
@@ -93,52 +102,59 @@
   font-size: 15px;
   cursor: pointer;
 }
-.profile .profile-name .follow:hover {
+.profile-name .follow:hover {
   transition: ease-in-out 0.2s;
   background-color: var(--quartenary-color);
 }
 @media (min-width: 0) {
-  .profile .profile-name .follow {
+  .profile-name .follow {
     margin-left: 10%;
     margin-top: -5px;
   }
 }
 @media (min-width: 480px) {
-  .profile .profile-name .follow {
+  .profile-name .follow {
     transition: width 2s;
     margin-left: 160px;
     margin-top: -35px;
   }
 }
 @media (min-width: 1200px) {
-  .profile .profile-name .follow {
+  .profile-name .follow {
     margin-top: -20px;
   }
 }
-.profile .profile-nickname {
-  font-size: 16px;
+
+.profile-nickname {
+  font-size: 0.75rem;
   padding: 1%;
 }
-.profile .profile-nickname h4 {
+.profile-nickname h4 {
   color: var(--text-color2);
   font-weight: 500;
 }
-.profile .profile-info {
-  font-size: 16px;
+
+.profile-info {
+  font-size: 0.75rem;
   color: var(--text-color2);
   margin-top: 2vh;
 }
-.profile .profile-info ul {
+.profile-info ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
-.profile .profile-info ul li {
+.profile-info ul li {
   padding: 10px 10px 0 0;
   list-style: none;
 }
-.profile .profile-info .material-symbols-outlined {
-  font-size: 16px;
+@media (min-width: 480px) {
+  .profile-info ul {
+    font-size: 1rem;
+  }
+}
+.profile-info .material-symbols-outlined {
+  font-size: 1rem;
   vertical-align: middle;
   margin-right: 5px;
 }
@@ -150,11 +166,16 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  font-size: 15px;
+  font-size: 0.75rem;
   color: var(--text-color2);
   font-weight: bold;
   border: 1px solid var(--border-color);
   border-top: none;
+}
+@media (min-width: 480px) {
+  .menu ul {
+    font-size: 0.9375rem;
+  }
 }
 .menu ul li {
   width: 25%;
@@ -186,6 +207,12 @@
   border: 1px solid var(--border-color);
   border-top: none;
   cursor: pointer;
+}
+@media (min-width: 480px) {
+  .feed-content {
+    grid-template-rows: 35px;
+    grid-template-columns: 35px auto auto;
+  }
 }
 .feed-content:hover {
   background-color: var(--hover-color);
