@@ -36,20 +36,46 @@
                 }   
             }
         .content-name{
+            width: 100%;
             grid-column:2;
+            grid-template-columns:45px 75px auto;
             grid-row:1;
-            display:flex;
-            flex-direction: row;
+            display:grid;
+            grid-template-areas: "photo h5 date";
+            @include small{
+                grid-template-columns:45px 75px auto;
+            }
             h5{
                 margin-left:10px;
                 margin-top: 20px;
+                grid-area:h5;
             }
             .date{
                 font-size: 13px;
-                           margin-top: 20px;
+                margin-top: 20px;
                 color:var(--text-color2);
-            }
+                grid-area: date;
 
+            }
+            .content-photo{
+
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                background-color: aquamarine;
+                margin-top:20px;
+                margin-left:-15px;
+                overflow: hidden;
+                border: 1px solid var(--background-color);
+                grid-area: photo;
+                @include small{
+                    margin-left:none;
+                }
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
 
     }
     .icons{
@@ -86,22 +112,7 @@
         }
     
     }
-    .content-photo{
 
-        width: 45px;
-        height: 45px;
-        border-radius: 50%;
-        background-color: aquamarine;
-        grid-row:1;
-        grid-column: 1 / span 3;
-        margin-top:20px;
-        overflow: hidden;
-        border: 1px solid var(--background-color);
-        img{
-            width: 50px;
-            height: 50px;
-        }
-    }
     .content-main{
         grid-column:2;
         grid-row:2;
@@ -109,6 +120,9 @@
         padding:0 0 1% 10%;
         margin-top:10px;
         margin-bottom: 10px;
+        grid-row: 2;
+        grid-column: 2;
+
         .tech-used{
             img{  
             border-radius: 10px;
@@ -126,6 +140,8 @@
             justify-content: center;
             align-items: center;
             font-size: 13px;
+            grid-row: 2;
+            grid-column: 2;
             li{
                 list-style-type: none;
             }
