@@ -69,7 +69,7 @@
                 border: 1px solid var(--background-color);
                 grid-area: photo;
                 @include small{
-                    margin-left:none;
+                    margin-left:auto;
                 }
                 img{
                     width: 50px;
