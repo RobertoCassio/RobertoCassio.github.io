@@ -6,7 +6,7 @@
     width: 100%;
     display:grid;
     grid-template-rows:35px;
-    grid-template-columns: 35px auto auto;
+    grid-template-columns: 20px auto auto;
     border: 1px solid var(--border-color);
     border-top:none;
     cursor:pointer;
@@ -38,12 +38,12 @@
         .content-name{
             width: 100%;
             grid-column:2;
-            grid-template-columns:45px 75px auto;
+            grid-template-columns:10% 75px auto;
             grid-row:1;
             display:grid;
             grid-template-areas: "photo h5 date";
             @include small{
-                grid-template-columns:45px 75px auto;
+                grid-template-columns:12% 75px auto;
             }
             h5{
                 margin-left:10px;
@@ -122,6 +122,7 @@
         margin-bottom: 10px;
         grid-row: 2;
         grid-column: 2;
+
 
         .tech-used{
             img{  
