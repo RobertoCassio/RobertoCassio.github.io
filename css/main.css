@@ -331,7 +331,7 @@
   }
 }
 .feed-content .content-main .text {
-  width: 90%;
+  width: 495px;
   justify-content: center;
   align-items: center;
   font-size: 13px;
@@ -340,6 +340,11 @@
 }
 .feed-content .content-main .text li {
   list-style-type: none;
+}
+.feed-content .content-main .text .contacts-img::before {
+  content: " ";
+  display: block;
+  margin-top: 20px;
 }
 .feed-content .content-main .text .contacts-img img {
   width: 30px;
