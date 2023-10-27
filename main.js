@@ -1,4 +1,8 @@
 $(document).ready(function(){
+    //Modal
+$(".feed-content").click(function(){
+    $(".modal").removeClass("hidden");
+})
     var inFeed = true;
     var inProjects = false;
     var inAbout = false;
