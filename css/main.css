@@ -200,7 +200,7 @@
 
 .feed-content {
   padding: 10px 10px 0 10px;
-  width: 100%;
+  width: 550px;
   display: grid;
   grid-template-rows: 35px;
   grid-template-columns: 20px auto auto;
@@ -331,7 +331,7 @@
   }
 }
 .feed-content .content-main .text {
-  width: 495px;
+  width: 100%;
   justify-content: center;
   align-items: center;
   font-size: 13px;
