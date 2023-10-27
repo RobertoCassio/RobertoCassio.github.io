@@ -1,13 +1,18 @@
 $(document).ready(function(){
-    //Modal
-$(".feed-content").click(function(){
-    $(".modal").removeClass("hidden");
-    consoleLog("Clicado");
-})
 
-$(".btn-close, .modal").click (function(){
-    $(".modal").addClass("hidden");
-})
+    //Modal com Event Delegation
+   /* $("#mainbody").on("click", ".feed-content", function () {
+        $(this).find(".modal").removeClass("hidden");
+        $(this).find(".overlay").removeClass("hidden");
+    });
+
+    $("#mainbody").on("click", ".btn-close", function () {
+        $(this).closest(".modal").addClass("hidden");
+        $(this).closest(".overlay").addClass("hidden");
+        alert("clicked")
+        console.log($(this).closest(".modal").addClass("hidden"));
+    });  - Necessario Ajustar*/ 
+
     var inFeed = true;
     var inProjects = false;
     var inAbout = false;
