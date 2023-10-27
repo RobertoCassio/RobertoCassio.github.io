@@ -2,6 +2,11 @@ $(document).ready(function(){
     //Modal
 $(".feed-content").click(function(){
     $(".modal").removeClass("hidden");
+    consoleLog("Clicado");
+})
+
+$(".btn-close, .modal").click (function(){
+    $(".modal").addClass("hidden");
 })
     var inFeed = true;
     var inProjects = false;
