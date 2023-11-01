@@ -447,18 +447,17 @@ body {
   left: 50%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --secondary-color:#192734;
-    --terciary-color: #22303c;
-    --quartenary-color:#8899ac;
-    --background-color:#15202B;
-    --hover-color: #192734;
-    --text-color:white;
-    --text-color2:#8899ac;
-    --border-color: rgba(136, 153, 172, 0.1);
-  }
+.dark-mode {
+  --secondary-color:#192734;
+  --terciary-color: #22303c;
+  --quartenary-color:#8899ac;
+  --background-color:#15202B;
+  --hover-color: #192734;
+  --text-color:white;
+  --text-color2:#8899ac;
+  --border-color: rgba(136, 153, 172, 0.1);
 }
+
 .hidden {
   display: none;
 }/*# sourceMappingURL=main.css.map */

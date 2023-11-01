@@ -60,6 +60,11 @@ $(document).ready(function(){
         updateUnderline();
     })
 
+    //Dark Mode
+    $('.cover-image').click(function(){
+        $("body").toggleClass("dark-mode");
+    })
+
   
 updateUnderline();
 
