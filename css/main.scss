@@ -10,7 +10,6 @@
     --background-color: white;
     --border-color: rgba(0, 0, 0, 0.1);
 }
-
 $hover-transition:ease-in-out 0.2s;
 
 $main-color-dark: #15202b;
@@ -65,8 +64,7 @@ body{
     border-bottom: 3px solid #1DA1F2;
     left:50%;
   }
-@media (prefers-color-scheme:dark){
-    :root{
+.dark-mode{
         --secondary-color:#192734;
         --terciary-color: #22303c;
         --quartenary-color:#8899ac; 
@@ -77,4 +75,6 @@ body{
         --text-color2:#8899ac;
         --border-color: rgba(136, 153, 172, 0.1);
     }
+.hidden {
+    display:none;
 }

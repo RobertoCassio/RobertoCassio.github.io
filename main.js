@@ -1,4 +1,18 @@
 $(document).ready(function(){
+
+    //Modal com Event Delegation
+   /* $("#mainbody").on("click", ".feed-content", function () {
+        $(this).find(".modal").removeClass("hidden");
+        $(this).find(".overlay").removeClass("hidden");
+    });
+
+    $("#mainbody").on("click", ".btn-close", function () {
+        $(this).closest(".modal").addClass("hidden");
+        $(this).closest(".overlay").addClass("hidden");
+        alert("clicked")
+        console.log($(this).closest(".modal").addClass("hidden"));
+    });  - Necessario Ajustar*/ 
+
     var inFeed = true;
     var inProjects = false;
     var inAbout = false;
@@ -44,6 +58,11 @@ $(document).ready(function(){
         inFeed = false;
         inAbout = false;
         updateUnderline();
+    })
+
+    //Dark Mode
+    $('.cover-image').click(function(){
+        $("body").toggleClass("dark-mode");
     })
 
   
