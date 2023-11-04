@@ -18,6 +18,20 @@
   border: 1px solid var(--border-color);
   box-sizing: border-box;
 }
+.cover-image #light-bulb-2 {
+  width: 150px;
+  height: 150px;
+  background: url(https://lh4.googleusercontent.com/-katLGTSCm2Q/UJC0_N7XCrI/AAAAAAAABq0/6GxNfNW-Ra4/s300/lightbulb.png) no-repeat 0 0;
+}
+.cover-image #light-bulb {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  top: 15%;
+  left: 65%;
+  background: url(https://lh4.googleusercontent.com/-katLGTSCm2Q/UJC0_N7XCrI/AAAAAAAABq0/6GxNfNW-Ra4/s300/lightbulb.png) no-repeat -150px 0;
+  z-index: 800;
+}
 
 .profile {
   height: 170px;

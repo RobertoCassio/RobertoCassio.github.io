@@ -63,6 +63,28 @@ $(document).ready(function(){
     //Dark Mode
     $('.cover-image').click(function(){
         $("body").toggleClass("dark-mode");
+        if ($("body").hasClass("dark-mode")){
+            $(".cover-image").css({
+                'background-color' : 'var(--quartenary-color )'
+            })
+            $("#light-bulb").css({
+                'opacity': '1'
+            });
+            $('#light-bulb-2').css({
+                'opacity': '0'
+            })
+        }else{
+
+            $(".cover-image").css({
+                'background-color' : 'var(--main-color)'
+            })
+            $('#light-bulb-2').css({
+                'opacity': '1'
+            })
+            $('#light-bulb').css({
+                'opacity': '1'
+            })
+        }
     })
 
   
@@ -80,6 +102,7 @@ function updateUnderline(){
         $('#contact').addClass("underline-item");
     }
 }
+
 
 });
 
